@@ -1,0 +1,22 @@
+﻿<Window x:Class="MicrosoftReportSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:MicrosoftReportSample"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:rv="clr-namespace:Microsoft.Reporting.WinForms;assembly=Microsoft.ReportViewer.WinForms"
+        Title="MainWindow" Width="525" Height="350"
+        mc:Ignorable="d">
+    <!--<WindowChrome.WindowChrome>
+        <WindowChrome CaptionHeight="{x:Static SystemParameters.CaptionHeight}"
+                      GlassFrameThickness="0,0,0,1"
+                      ResizeBorderThickness="{x:Static SystemParameters.WindowResizeBorderThickness}" />
+    </WindowChrome.WindowChrome>-->
+    <Grid>
+        <Button x:Name="FPrintButton" Margin="139,139,278,150" Click="FPrintButtonClick"
+                Content="印刷" FontFamily="Meiryo UI" />
+        <Button x:Name="FPreviewButton" Margin="244,139,173,150" Content="印刷プレビュー"
+                FontFamily="Meiryo UI" Click="FPreviewButton_Click" />
+
+    </Grid>
+</Window>
